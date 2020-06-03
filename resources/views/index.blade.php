@@ -44,7 +44,7 @@
     <div class="container d-flex">
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@KaryaSatria.com</a>
-        <i class="icofont-phone"></i> +62 879 4354 000
+        <i class="icofont-phone"></i> +62 879 4354 1111
       </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
