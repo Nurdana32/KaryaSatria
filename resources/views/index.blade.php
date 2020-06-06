@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Karya Satria - Index</title>
+  <title>Karya Satria Malang</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -29,12 +30,6 @@
   <!-- Template Main CSS File -->
   <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Flattern - v2.0.1
-  * Template URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -43,8 +38,8 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@KaryaSatria.com</a>
-        <i class="icofont-phone"></i> +62 879 4354 coba
+        <i class="icofont-envelope"></i><a href="mailto:malang@karyasatria.com">malang@karyasatria.com</a>
+        <i class="icofont-phone"></i> +62 812 2805 8149
       </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -61,21 +56,22 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="/">Karya Satria</a></h1>
+        <h1 class="text-light"><a href="/">Karya Satria Malang</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+        <ul class="one">
+          <li><a href="" class="hero">Home</a></li>
+          <li><a href="" class="services">Layanan</a></li>
+          <li><a href="" class="about">Tentang Kami</a></li>
+          <li><a href="" class="clients">Clients</a></li>
+          <li><a href="" class="portfolio">Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+          <!-- <li><a href="pricing">Pricing</a></li>
+          <li><a href="blog">Blog</a></li> -->
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Drop Down 2</a>
@@ -91,9 +87,7 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-
+          </li> -->
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -112,13 +106,19 @@
             <div class="carousel-content animated fadeInUp">
               <h2>Selamat Datang Di <span>Karya Satria</span></h2>
               <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a>
+              </div>
             </div>
           </div>
+          <div class="arrow">
+                  <a class="services"></a>
+                  <a class="services"></a>
+          </div>
+          </div>
         </div>
-
+        
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+        <!-- <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
           <div class="carousel-container">
             <div class="carousel-content animated fadeInUp">
               <h2>Lorem Ipsum Dolor</h2>
@@ -126,10 +126,10 @@
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+        <!-- <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
           <div class="carousel-container">
             <div class="carousel-content animated fadeInUp">
               <h2>Sequi ea ut et est quaerat</h2>
@@ -137,11 +137,11 @@
               <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon bx bx-left-arrow" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
@@ -149,17 +149,19 @@
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon bx bx-right-arrow" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+      </a> -->
+      
+      <!-- <ol class="carousel-indicators" id="hero-carousel-indicators"></ol> -->
+      
 
     </div>
+    
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
+    <!-- <section id="cta" class="cta">
       <div class="container">
 
         <div class="row">
@@ -173,39 +175,43 @@
         </div>
 
       </div>
-    </section><!-- End Cta Section -->
+    </section> -->
+    <!-- End Cta Section -->
 
     <!-- ======= Services Section ======= -->
+
     <section id="services" class="services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Check out <strong>our services</strong></h2>
+          <div class="panah" id="layanan">
+            <h2>Layanan<strong> Kami</strong></h2>
+          </div>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="icofont-computer"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="">Produksi</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <h4 class="title"><a href="">Maintenance</a></h4>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="icofont-earth"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="">Sewa</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <!-- <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="icofont-image"></i></div>
               <h4 class="title"><a href="">Magni Dolores</a></h4>
@@ -225,11 +231,138 @@
               <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
               <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
     </section><!-- End Services Section -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tentang <strong>Kami</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-7.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-8.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our <strong>Clients</strong></h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-7.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{asset('assets/img/clients/client-8.png')}}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -347,70 +480,6 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>Clients</strong></h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-1.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-7.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="{{asset('assets/img/clients/client-8.png')}}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Clients Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -421,24 +490,24 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Flattern</h3>
+            <h3>Karya Satria Malang</h3>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Jl. H. Nur Rois 18a, Gentong<br>
+              Tirtomoyo, Pakis, Malang<br>
+              Jawa Timur, Indonesia <br><br>
+              <strong>Phone:</strong> +62 812 2805 8149<br>
+              <strong>Email:</strong> malang@karyasatria.com<br>
             </p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -453,13 +522,13 @@
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -467,18 +536,14 @@
 
     <div class="container d-md-flex py-4">
 
-      <div class="mr-md-auto text-center text-md-left">
+      <!-- <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
           &copy; Copyright <strong><span>Flattern</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="">BootstrapMade</a>
         </div>
-      </div>
+      </div> -->
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -505,6 +570,8 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('assets/js/main.js')}}"></script>
+  <script src="{{asset('assets/js/jquery.onepage-scroll.js')}}"></script>
+  <script src="{{asset('assets/js/jquery-3.3.1.min.js')}}"></script>
 
 </body>
 

@@ -25,4 +25,12 @@ Route::get('/home', function () {
 Route::get('/about', function () {
     return view('about');
 });
-
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
