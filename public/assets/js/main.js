@@ -22,8 +22,8 @@
         $("#neon-box-pntv-backlite-form").css('display', 'none');
         $("#shopsign-pole").css('display', 'none');
         $("#shopsign-pole-form").css('display', 'none');
-        $("#shopsign-plex").css('display', 'none');
-        $("#shopsign-plex-form").css('display', 'none');
+        $("#shopsign-flex").css('display', 'none');
+        $("#shopsign-flex-form").css('display', 'none');
         $("#form-production").css('display', 'none');
         $("#result-production").text("0");
         $("#title-form").text("");
@@ -33,7 +33,7 @@
         $("#pntv-sticker-input").val("");
         $("#pntv-backlite-input").val("");
         $("#pole-input").val("");
-        $("#plex-input").val("");
+        $("#flex-input").val("");
     });
 
     $(document).on('click', '#neon-box', function (e) {
@@ -100,26 +100,26 @@
         $("#neon-box").css('display', 'none');
         $("#shopsign").css('display', 'none');
         $("#shopsign-pole").css('display', 'block');
-        $("#shopsign-plex").css('display', 'block');
+        $("#shopsign-flex").css('display', 'block');
         $("#title-form").text("Shopsign");
-        $("#price").text("900")
     });
 
     $(document).on('click', '#shopsign-pole', function (e) {
         $("#shopsign-pole").css('display', 'none');
-        $("#shopsign-plex").css('display', 'none');
+        $("#shopsign-flex").css('display', 'none');
         $("#form-production").css('display', 'block');
         $("#shopsign-pole-form").css('display', 'block');
         $("#title-form").text("Shopsign Pole");
-        $("#price").text("600")
+        $("#price").text("900")
     });
 
-    $(document).on('click', '#shopsign-plex', function (e) {
+    $(document).on('click', '#shopsign-flex', function (e) {
         $("#shopsign-pole").css('display', 'none');
-        $("#shopsign-plex").css('display', 'none');
+        $("#shopsign-flex").css('display', 'none');
         $("#form-production").css('display', 'block');
-        $("#shopsign-plex-form").css('display', 'block');
-        $("#title-form").text("Shopsign Plex");
+        $("#shopsign-flex-form").css('display', 'block');
+        $("#title-form").text("Shopsign Flex");
+        $("#price").text("600")
     });
 
     $(document).on('submit', '#neon-box-pnth-sticker-form', function (e) {
@@ -142,8 +142,8 @@
         calProduction(900000, $("#pole-input").val());
     });
 
-    $(document).on('submit', '#shopsign-plex-form', function (e) {
-        calProduction(600000, $("#plex-input").val());
+    $(document).on('submit', '#shopsign-flex-form', function (e) {
+        calProduction(600000, $("#flex-input").val());
     });
 
     function calProduction(price, meters) {

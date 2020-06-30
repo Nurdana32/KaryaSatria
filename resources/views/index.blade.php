@@ -276,7 +276,7 @@
                 <a href="javascript: void(0);" class="btn btn-production" id="shopsign-pole">Pole (900k/m<sup>2</sup>)</a>
               </div>
               <div class="col-12">
-                <a href="javascript: void(0);" class="btn btn-production" id="shopsign-plex">Plex (600k/m<sup>2</sup>)</a>
+                <a href="javascript: void(0);" class="btn btn-production" id="shopsign-flex">Flex (600k/m<sup>2</sup>)</a>
               </div>
               <div class="col-12 form-production" id="form-production">
                 <h6>Masukkan ukuran dalam m<sup>2</sup> (<span id="price"></span>k/m<sup>2</sup>)</h6>
@@ -295,8 +295,8 @@
                 <form action="javascipt: void(0);" id="shopsign-pole-form">
                   <input type="number" id="pole-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
                 </form>
-                <form action="javascipt: void(0);" id="shopsign-plex-form">
-                  <input type="number" id="plex-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form action="javascipt: void(0);" id="shopsign-flex-form">
+                  <input type="number" id="flex-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
                 </form>
                 <div class="result">
                   <h1>Rp<span id="result-production">0</span></h1>
