@@ -111,8 +111,8 @@
             </div>
           </div>
           <div class="arrow">
-                  <a href="#" class="services"></a>
-                  <a href="#" class="services"></a>
+            <a href="#" class="services"></a>
+            <a href="#" class="services"></a>
           </div>
           </div>
         </div>
@@ -192,22 +192,28 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up">
-              <div class="icon"><i class="icofont-computer"></i></div>
-              <h4 class="title"><a href="">Produksi</a></h4>
+              <a href="javacript: void(0)" id="open-production" data-toggle="modal" data-target="#masuk">
+                <div class="icon"><i class="icofont-computer"></i></div>
+                <h4 class="title">Produksi</h4>
+              </a>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-              <h4 class="title"><a href="">Maintenance</a></h4>
+              <a href="">
+                <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+                <h4 class="title">Maintenance</h4>
+              </a>
               <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="icofont-earth"></i></div>
-              <h4 class="title"><a href="">Sewa</a></h4>
+              <a href="">
+                <div class="icon"><i class="icofont-earth"></i></div>
+                <h4 class="title"><a href="">Sewa</a></h4>
+              </a>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
@@ -233,8 +239,76 @@
             </div>
           </div> -->
         </div>
-
       </div>
+      <div class="modal fade" id="masuk" role="dialog" style="z-index: 99999">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Produksi <span id="title-form"></span></h5>
+              <a href="javascript: void(0);" class="close" data-dismiss="modal">&times;</a>
+            </div>
+            <div class="modal-body row">
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box">Neon Box</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="shopsign">Shopsign</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pnth">PNTH</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pntv">PNTV</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pnth-sticker">Stiker (3.000k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pnth-backlite">Backlite (1.500k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pntv-sticker">Stiker (3.300k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="neon-box-pntv-backlite">Backlite (1.950k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="shopsign-pole">Pole (900k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12">
+                <a href="javascript: void(0);" class="btn btn-production" id="shopsign-plex">Plex (600k/m<sup>2</sup>)</a>
+              </div>
+              <div class="col-12 form-production" id="form-production">
+                <h6>Masukkan ukuran dalam m<sup>2</sup> (<span id="price"></span>k/m<sup>2</sup>)</h6>
+                <form action="javascipt: void(0);" id="neon-box-pnth-sticker-form">
+                  <input type="number" id="pnth-sticker-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <form action="javascipt: void(0);" id="neon-box-pnth-backlite-form">
+                  <input type="number" id="pnth-backlite-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <form action="javascipt: void(0);" id="neon-box-pntv-sticker-form">
+                  <input type="number" id="pntv-sticker-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <form action="javascipt: void(0);" id="neon-box-pntv-backlite-form">
+                  <input type="number" id="pntv-backlite-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <form action="javascipt: void(0);" id="shopsign-pole-form">
+                  <input type="number" id="pole-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <form action="javascipt: void(0);" id="shopsign-plex-form">
+                  <input type="number" id="plex-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                </form>
+                <div class="result">
+                  <h1>Rp<span id="result-production">0</span></h1>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="javascript: void(0);" class="btn btn-danger" data-dismiss="modal">Tutup</a>
+            </div>
+          </div>
+        </div>
+      </div> 
     </section><!-- End Services Section -->
     <!-- ======= About Section ======= -->
     <section id="about" class="about">

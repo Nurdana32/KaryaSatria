@@ -22,6 +22,9 @@ Route::get('/home', function () {
 
 });
 
+Route::get('/test', function () {
+    return view('blog-single');
+});
 Route::get('/about', function () {
     return view('about');
 });
