@@ -28,12 +28,18 @@
         $("#result-production").text("0");
         $("#title-form").text("");
         $("#price").text("");
-        $("#pnth-sticker-input").val("");
-        $("#pnth-backliter-input").val("");
-        $("#pntv-sticker-input").val("");
-        $("#pntv-backlite-input").val("");
-        $("#pole-input").val("");
-        $("#flex-input").val("");
+        $("#pnth-sticker-inputP").val("");
+        $("#pnth-sticker-inputL").val("");
+        $("#pnth-backliter-inputP").val("");
+        $("#pnth-backliter-inputL").val("");
+        $("#pntv-sticker-inputP").val("");
+        $("#pntv-sticker-inputL").val("");
+        $("#pntv-backlite-inputP").val("");
+        $("#pntv-backlite-inputL").val("");
+        $("#pole-inputP").val("");
+        $("#pole-inputL").val("");
+        $("#flex-inputP").val("");
+        $("#flex-inputL").val("");
     });
 
     $(document).on('click', '#neon-box', function (e) {
@@ -122,34 +128,139 @@
         $("#price").text("600")
     });
 
+
     $(document).on('submit', '#neon-box-pnth-sticker-form', function (e) {
-        calProduction(3000000, $("#pnth-sticker-input").val());
+        calProduction(3000000, $("#pnth-sticker-inputP").val(), $("#pnth-sticker-inputL").val());
+
     });
 
     $(document).on('submit', '#neon-box-pnth-backlite-form', function (e) {
-        calProduction(1500000, $("#pnth-backlite-input").val());
+        calProduction(1500000, $("#pnth-backlite-inputP").val(), $("#pnth-backlite-inputL").val());
     });
 
     $(document).on('submit', '#neon-box-pntv-sticker-form', function (e) {
-        calProduction(3300000, $("#pntv-sticker-input").val());
+        calProduction(3300000, $("#pntv-sticker-inputP").val(), $("#pntv-sticker-inputL").val());
     });
 
     $(document).on('submit', '#neon-box-pntv-backlite-form', function (e) {
-        calProduction(1950000, $("#pntv-backlite-input").val());
+        calProduction(1950000, $("#pntv-backlite-inputP").val(), $("#pntv-backlite-inputL").val());
     });
 
     $(document).on('submit', '#shopsign-pole-form', function (e) {
-        calProduction(900000, $("#pole-input").val());
+        calProduction(900000, $("#pole-inputP").val(), $("#pole-inputL").val());
     });
 
     $(document).on('submit', '#shopsign-flex-form', function (e) {
-        calProduction(600000, $("#flex-input").val());
+        calProduction(600000, $("#flex-inputP").val(), $("#flex-inputL").val());
     });
 
-    function calProduction(price, meters) {
-        var result = price * meters;
+    function calProduction(price, panjang, lebar) {
+        var result = (panjang * lebar) * price;
+        if (result != 0 || result != '') {
+            document.getElementById('kirim').style.visibility = 'visible';
+        } else {
+            document.getElementById('kirim').style.visibility = 'hidden';
+        }
         $("#result-production").text(result.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1."));
     }
+
+
+    document.getElementById('kirim').style.visibility = 'hidden';
+
+
+    $("#masuk").on("hidden.bs.modal", function () {
+        document.getElementById('kirim').style.visibility = 'hidden';
+    });
+
+    $(document).ready(function () {
+        $("#satu").click(function () {
+
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Neon Box PNTH Stiker %0d%0a";
+            var panjang = $("#pnth-sticker-inputP").val();
+            var lebar = $("#pnth-sticker-inputL").val();
+            var hargaAwal = 3000000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#dua").click(function () {
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Neon Box PNTH Backlite %0d%0a";
+            var panjang = $("#pnth-backlite-inputP").val();
+            var lebar = $("#pnth-backlite-inputL").val();
+            var hargaAwal = 1500000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#tiga").click(function () {
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Neon Box PNTV Stiker %0d%0a";
+            var panjang = $("#pntv-sticker-inputP").val();
+            var lebar = $("#pntv-sticker-inputL").val();
+            var hargaAwal = 3300000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#empat").click(function () {
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Neon Box PNTV Backlite %0d%0a";
+            var panjang = $("#pntv-backlite-inputP").val();
+            var lebar = $("#pntv-backlite-inputL").val();
+            var hargaAwal = 195000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#lima").click(function () {
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Shopsign Pole %0d%0a";
+            var panjang = $("#pole-inputP").val();
+            var lebar = $("#pole-inputL").val();
+            var hargaAwal = 900000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#enam").click(function () {
+            var jenis = "mailto:malang@karyasatria.com?subject=Produksi&body=Jenis Pesanan :  Shopsign Flex %0d%0a";
+            var panjang = $("#flex-inputP").val();
+            var lebar = $("#flex-inputL").val();
+            var hargaAwal = 600000;
+            var harga = (panjang * lebar) * hargaAwal;
+            var harga = harga.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.");
+            $("#kirim").attr("href", jenis + "Panjang : " + panjang + "%0d%0aLebar : " + lebar + "%0d%0aHarga : Rp" + harga);
+        });
+    });
+
+    $('.hitung').click(function () {
+        var panjang = $(this).closest('.produksi').children('.panjang').val();
+        // var panjangs = [$('#pnth-sticker-inputP').val(), $('#pnth-backlite-inputP').val()];
+        // var lebars = [$('#pnth-sticker-inputL').val(), $('#pnth-backlite-inputL').val()];
+        var lebar = $(this).closest('.produksi').children('.lebar').val();
+        if (panjang == '' || panjang == '0') {
+            alert('Kolom Panjang Tidak Boleh Kosong');
+        }
+        if (lebar == '' || lebar == '0') {
+            alert('Kolom Lebar Tidak Boleh Kosong');
+        }
+    });
+
+
+
+
 
     // Smooth scroll for the navigation menu and links with .scrollto classes
     $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {

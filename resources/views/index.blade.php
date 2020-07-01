@@ -245,7 +245,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Produksi <span id="title-form"></span></h5>
-              <a href="javascript: void(0);" class="close" data-dismiss="modal">&times;</a>
+              <a href="javascript: void(0);" class="close"  data-dismiss="modal">&times;</a>
             </div>
             <div class="modal-body row">
               <div class="col-12">
@@ -280,30 +280,56 @@
               </div>
               <div class="col-12 form-production" id="form-production">
                 <h6>Masukkan ukuran dalam m<sup>2</sup> (<span id="price"></span>k/m<sup>2</sup>)</h6>
-                <form action="javascipt: void(0);" id="neon-box-pnth-sticker-form">
-                  <input type="number" id="pnth-sticker-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="neon-box-pnth-sticker-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0"  id="pnth-sticker-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number"  min="0" id="pnth-sticker-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="satu" value="Hitung">
                 </form>
-                <form action="javascipt: void(0);" id="neon-box-pnth-backlite-form">
-                  <input type="number" id="pnth-backlite-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="neon-box-pnth-backlite-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0" id="pnth-backlite-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number" min="0" id="pnth-backlite-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="dua" value="Hitung" onClick="document.getElementById('kirim').style.visibility = 'visible'">
                 </form>
-                <form action="javascipt: void(0);" id="neon-box-pntv-sticker-form">
-                  <input type="number" id="pntv-sticker-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="neon-box-pntv-sticker-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0" id="pntv-sticker-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number" min="0" id="pntv-sticker-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="tiga" value="Hitung" onClick="document.getElementById('kirim').style.visibility = 'visible'">
                 </form>
-                <form action="javascipt: void(0);" id="neon-box-pntv-backlite-form">
-                  <input type="number" id="pntv-backlite-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="neon-box-pntv-backlite-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0" id="pntv-backlite-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number" min="0" id="pntv-backlite-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="empat" value="Hitung" onClick="document.getElementById('kirim').style.visibility = 'visible'">
                 </form>
-                <form action="javascipt: void(0);" id="shopsign-pole-form">
-                  <input type="number" id="pole-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="shopsign-pole-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0" id="pole-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number" min="0" id="pole-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="lima" value="Hitung" onClick="document.getElementById('kirim').style.visibility = 'visible'">
                 </form>
-                <form action="javascipt: void(0);" id="shopsign-flex-form">
-                  <input type="number" id="flex-input" placeholder="Kelipatan 0.5" step="0.5"><input type="submit" value="Hitung">
+                <form class="produksi" action="javascipt: void(0);" id="shopsign-flex-form">
+                  <h6>Panjang</h6>
+                  <input class="panjang" type="number" min="0" id="flex-inputP" placeholder="Kelipatan 0.5" step="0.5">
+                  <h6></br>Lebar</h6>
+                  <input class="lebar" type="number" min="0" id="flex-inputL" placeholder="Kelipatan 0.5" step="0.5">
+                  <input class="hitung" type="submit" id="enam" value="Hitung" onClick="document.getElementById('kirim').style.visibility = 'visible'">
                 </form>
                 <div class="result">
+                  
                   <h1>Rp<span id="result-production">0</span></h1>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
+            <a class="btn btn-danger" id="kirim" target="_blank" href="mailto:malang@karyasatria.com">Kirim Email</a>
               <a href="javascript: void(0);" class="btn btn-danger" data-dismiss="modal">Tutup</a>
             </div>
           </div>
